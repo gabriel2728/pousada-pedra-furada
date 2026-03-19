@@ -4,11 +4,11 @@
   "description": "Sistema web SPA desenvolvido para gerenciar tarefas do setor de limpeza da pousada.",
   "main": "next.config.js",
   "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start",
-  "test": "jest --watchAll"
-},
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest --watchAll"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gabriel2728/pousada-pedra-furada.git"
@@ -16,9 +16,23 @@
   "keywords": [],
   "author": "Gabriel",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/gabriel2728/pousada-pedra-furada/issues"
   },
-  "homepage": "https://github.com/gabriel2728/pousada-pedra-furada#readme"
+  "homepage": "https://github.com/gabriel2728/pousada-pedra-furada#readme",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "babel-jest": "^30.3.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0"
+  },
+  "dependencies": {
+    "next": "^16.2.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
 }
