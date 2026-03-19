@@ -9,7 +9,9 @@ export default function Login() {
       <input type="password" placeholder="Senha" />
       <br /><br />
 
-      <button>Entrar</button>
+      <a href="/dashboard">
+        <button>Entrar</button>
+      </a>
     </div>
   );
 }

@@ -1,21 +1,12 @@
+import Menu from "../components/Menu";
+import styles from "../styles/pages.module.css";
+
 export default function Usuarios() {
   return (
-    <div>
-      <h1>Cadastro de Usuários</h1>
-
-      <input type="text" placeholder="Nome" />
-      <br /><br />
-
-      <input type="email" placeholder="Email" />
-      <br /><br />
-
-      <input type="text" placeholder="Cargo" />
-      <br /><br />
-
-      <input type="password" placeholder="Senha" />
-      <br /><br />
-
-      <button>Cadastrar</button>
+    <div className={styles.container}>
+      <Menu />
+      <h1>Usuários</h1>
+      <p>Cadastro e gerenciamento de usuários</p>
     </div>
   );
 }

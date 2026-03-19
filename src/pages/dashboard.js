@@ -1,13 +1,12 @@
+import Menu from "../components/Menu";
+import styles from "../styles/pages.module.css";
+
 export default function Dashboard() {
   return (
-    <div>
+    <div className={styles.container}>
+      <Menu />
       <h1>Dashboard</h1>
-
-      <ul>
-        <li><a href="/tarefas">Tarefas</a></li>
-        <li><a href="/quartos">Quartos</a></li>
-        <li><a href="/usuarios">Usuários</a></li>
-      </ul>
+      <p>Bem-vindo ao sistema da Pousada Pedra Furada</p>
     </div>
   );
 }

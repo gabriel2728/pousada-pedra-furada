@@ -1,12 +1,12 @@
+import Menu from "../components/Menu";
+import styles from "../styles/pages.module.css";
+
 export default function Quartos() {
   return (
-    <div>
+    <div className={styles.container}>
+      <Menu />
       <h1>Quartos</h1>
-
-      <ul>
-        <li>Quarto 101 - Ocupado</li>
-        <li>Quarto 102 - Livre</li>
-      </ul>
+      <p>Visualização de quartos ocupados e disponíveis</p>
     </div>
   );
 }

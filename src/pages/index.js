@@ -4,7 +4,7 @@ export default function Home() {
       <h1>Pousada Pedra Furada</h1>
       <p>Sistema de gerenciamento interno</p>
 
-      <a href="/login.js">Ir para Login</a>
+      <a href="/login">Ir para Login</a>
     </div>
   );
 }
