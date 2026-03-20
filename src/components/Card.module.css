@@ -1,0 +1,8 @@
+.card {
+  border: 1px solid #ddd; /* borda cinza clara */
+  padding: 20px; /* espaço interno */
+  margin: 15px; /* espaço externo */
+  border-radius: 10px; /* cantos arredondados */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra leve */
+  background-color: white; /* fundo branco */
+}
