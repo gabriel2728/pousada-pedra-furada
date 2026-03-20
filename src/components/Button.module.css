@@ -1,0 +1,13 @@
+.button {
+  padding: 10px 20px; /* altura e largura do botão */
+  background-color: #0066cc; /* azul */
+  color: white; /* texto branco */
+  border: none; /* sem borda */
+  border-radius: 5px; /* cantos arredondados */
+  cursor: pointer; /* muda cursor ao passar */
+  transition: 0.3s; /* transição suave */
+}
+
+.button:hover {
+  background-color: #004999; /* azul mais escuro no hover */
+}
