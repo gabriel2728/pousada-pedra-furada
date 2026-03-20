@@ -1,0 +1,18 @@
+.header {
+  display: flex; /* coloca os itens em linha */
+  justify-content: space-between; /* separa título e menu */
+  align-items: center; /* alinha verticalmente */
+  padding: 20px; /* espaço interno */
+  background-color: #0066cc; /* cor azul */
+  color: white; /* texto branco */
+}
+
+.header a {
+  margin-left: 15px; /* separa os links */
+  color: white; /* cor dos links */
+  text-decoration: none; /* tira sublinhado */
+}
+
+.header a:hover {
+  text-decoration: underline; /* efeito hover */
+}
