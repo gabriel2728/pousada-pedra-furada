@@ -1,52 +1,66 @@
+import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { useState } from "react";
 
 export default function Reserva() {
+  // 👇 estados (dados do formulário)
   const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
   const [data, setData] = useState("");
 
+  // 👇 função ao enviar
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    alert(`Reserva feita para ${nome} na data ${data}`);
+    alert(`Reserva feita!\nNome: ${nome}\nEmail: ${email}\nData: ${data}`);
+
+    // limpar campos
+    setNome("");
+    setEmail("");
+    setData("");
   };
 
   return (
-    <>
+    <main>
       <Header />
 
-      <main style={{ padding: "20px", textAlign: "center" }}>
-        <h1>Reserva</h1>
-        <p>Preencha os dados para fazer sua reserva.</p>
+      <section style={{ padding: "40px", textAlign: "center" }}>
+        <h1>Faça sua Reserva</h1>
 
         <form onSubmit={handleSubmit} style={{ marginTop: "20px" }}>
-          <div>
+          
+          <div style={{ margin: "10px" }}>
             <input
               type="text"
               placeholder="Seu nome"
               value={nome}
               onChange={(e) => setNome(e.target.value)}
-              required
             />
           </div>
 
-          <div style={{ marginTop: "10px" }}>
+          <div style={{ margin: "10px" }}>
+            <input
+              type="email"
+              placeholder="Seu email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+
+          <div style={{ margin: "10px" }}>
             <input
               type="date"
               value={data}
               onChange={(e) => setData(e.target.value)}
-              required
             />
           </div>
 
-          <button style={{ marginTop: "15px" }} type="submit">
-            Confirmar Reserva
-          </button>
+          <button type="submit">Confirmar Reserva</button>
+
         </form>
-      </main>
+      </section>
 
       <Footer />
-    </>
+    </main>
   );
 }
